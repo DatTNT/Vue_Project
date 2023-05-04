@@ -1,0 +1,39 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["src/env.d.ts", "src/**/*", "src/**/*.vue"],
+
+  "imports": {
+    "vue": {
+      "verbatim": true
+    }
+  },
+  "compilerOptions": {
+    "target": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "isolatedModules": false,
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "types": [
+      "webpack-env"
+    ],
+  },
+
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
