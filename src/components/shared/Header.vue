@@ -3,7 +3,7 @@
   <nav id="nav" class="container mx-auto">
     <!-- Logo -->
     <div
-      class="z-10 block max-w-screen-lg my-6 xl:max-w-screen-xl sm:flex sm:justify-between sm:items-center"
+      class="z-10 block max-w-screen-lg my-0 xl:max-w-screen-xl sm:flex sm:justify-between sm:items-center"
     >
       <div class="flex items-center justify-between">
         <div>
@@ -16,7 +16,7 @@
               alt="logo"
             />
             <img v-else src="../../assets/images/logo.png" class="w-14" alt="logo" />
-            <span class="nav__item__logo__text">JoseLuisGS</span>
+            <span class="nav__item__logo__text">TienDatPhong</span>
           </router-link>
         </div>
         <!-- Solo lo mostramos en pequeñas pantallas, oculto desde sm -->
@@ -31,7 +31,7 @@
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              class="w-6 h-6 fill-current text-secondary-dark dark:text-ternary-light"
+              class="w-6 h-6 fill-current text-secondary-dark"
             >
               <path
                 v-if="isOpen"
@@ -54,9 +54,9 @@
         :class="isOpen ? 'block' : 'hidden'"
         class="items-center justify-center mt-5 ml-3 sm:ml-4 sm:mt-3 sm:flex"
       >
-        <router-link :to="{ name: 'Projects' }" class="nav__item"> Proyectos </router-link>
-        <router-link :to="{ name: 'About' }" class="nav__item"> Conóceme </router-link>
-        <router-link :to="{ name: 'Contact' }" class="nav__item"> Contacto </router-link>
+        <router-link :to="{ name: 'Projects' }" class="nav__item"> Project </router-link>
+        <router-link :to="{ name: 'About' }" class="nav__item"> About me </router-link>
+        <router-link :to="{ name: 'Contact' }" class="nav__item"> Contact </router-link>
       </div>
       <!-- Botón de contacto -->
       <div class="flex-col items-center justify-between hidden sm:flex md:flex-row">
@@ -159,18 +159,18 @@ export default defineComponent({
           font-medium
           text-left
           text-primary-dark
-          dark:text-ternary-light
-          hover:text-secondary-dark
-          dark:hover:text-secondary-light
+          /* dark:text-ternary-light */
+          hover:text-indigo-700
+          /* dark:hover:text-secondary-light */
           md:mx-2
           sm:py-2;
 }
 
 .nav__item__logo__text {
   @apply text-primary-dark
-          dark:text-ternary-light
+          /* dark:text-ternary-light */
           hover:text-secondary-dark
-          dark:hover:text-secondary-light
+          /* dark:hover:text-secondary-light */
           ml-2
           text-lg
           font-semibold;

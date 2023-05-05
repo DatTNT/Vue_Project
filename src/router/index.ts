@@ -8,7 +8,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Home',
     component: Home,
     meta: {
-      title: 'JoseLuisGS - Home',
+      title: 'TienDat - Home',
       metaTags: [
         {
           name: 'description',
@@ -33,7 +33,7 @@ const routes: Array<RouteRecordRaw> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue'),
     meta: {
-      title: 'JoseLuisGS - About',
+      title: 'TienDat - About',
       metaTags: [
         {
           name: 'description',
@@ -51,7 +51,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Contact',
     component: () => import('@/views/Contact.vue'),
     meta: {
-      title: 'JoseLuisGS - Contact'
+      title: 'TienDat - Contact'
     }
   },
   {
@@ -59,7 +59,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Projects',
     component: () => import('@/views/Projects.vue'),
     meta: {
-      title: 'JoseLuisGS - Projects'
+      title: 'TienDat - Projects'
     }
   },
   {
@@ -67,13 +67,13 @@ const routes: Array<RouteRecordRaw> = [
     name: 'SingleProject',
     component: () => import('@/views/SingleProject.vue'),
     meta: {
-      title: 'JoseLuisGS - Single Project'
+      title: 'TienDat - Single Project'
     }
   }
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes
 })
 

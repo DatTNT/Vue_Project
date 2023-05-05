@@ -3,7 +3,6 @@
     <!-- Banner start -->
     <BannerHome />
     <!-- Banner end -->
-
     <!-- Projects start -->
     <ProjectsGrid />
     <!-- Projects end -->

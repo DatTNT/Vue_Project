@@ -61,6 +61,6 @@ a {
            dark:hover:text-indigo-200;
 }
 .about__parrafo {
-  @apply mb-4 text-lg text-ternary-dark dark:text-ternary-light;
+  @apply mb-4 text-lg text-ternary-dark;
 }
 </style>

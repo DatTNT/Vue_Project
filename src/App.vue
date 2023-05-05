@@ -2,13 +2,17 @@
   <div id="app">
     <!-- Header -->
     <Header></Header>
+
     <!-- Añadimos una transicion
      https://vuejs.org/v2/guide/transitions.html -->
-    <router-view v-slot="{ Component }">
+    <!-- <router-view>
       <transition name="fade" mode="out-in">
         <component :is="Component" />
       </transition>
-    </router-view>
+    </router-view> -->
+    <suspense>
+      <router-view />
+    </suspense>
     <!-- Footer -->
     <Footer></Footer>
   </div>
@@ -41,13 +45,11 @@ export default defineComponent({
 </script>
 
 <style scoped>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-} */
+#app {
+  background-color: rgb(107, 138, 224);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+  /* opacity: 0.2; */
+}
 /* Programamos las transiciones
 https://vuejs.org/v2/guide/transitions.html */
 .fade-enter-active,

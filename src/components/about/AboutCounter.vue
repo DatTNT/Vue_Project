@@ -3,7 +3,7 @@
     <div class="container block py-20 mx-auto sm:flex sm:justify-between sm:items-center">
       <div class="mb-20 sm:mb-0">
         <p class="counter__parrafo">10+</p>
-        <span class="counter__span">Años de experiencia</span>
+        <span class="counter__span">Years of experience</span>
       </div>
       <div class="mb-20 sm:mb-0">
         <p class="counter__parrafo">20k+</p>
@@ -11,11 +11,11 @@
       </div>
       <div class="mb-20 sm:mb-0">
         <p class="counter__parrafo">92%</p>
-        <span class="counter__span">Comentarios positivos</span>
+        <span class="counter__span">Positive comments</span>
       </div>
       <div>
         <p class="counter__parrafo">100+</p>
-        <span class="counter__span">Proyectos completados</span>
+        <span class="counter__span">Project completed</span>
       </div>
     </div>
   </div>
