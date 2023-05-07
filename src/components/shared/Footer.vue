@@ -4,17 +4,17 @@
     <div class="flex flex-col items-center justify-center mb-12 sm:mb-28">
       <!-- Cada vez que ponemos dark estamos con el modo oscuro -->
       <p class="mb-5 text-3xl font-semibold sm:text-4xl text-primary-dark dark:text-primary-light">
-        Suígueme
+        Support me
       </p>
       <ul class="flex gap-4 sm:gap-8">
-        <a href="https://github.com/joseluisgs" target="__blank" class="footer__social__link">
+        <a href="https://github.com/DatTNT" target="__blank" class="footer__social__link">
           <Icon icon="lucide:github" class="w-6 h-6 sm:w-8 sm:h-8" />
         </a>
-        <a href="https://twitter.com/joseluisgonsan" target="__blank" class="footer__social__link">
+        <a href="https://twitter.com/DatTien20039103" target="__blank" class="footer__social__link">
           <Icon icon="lucide:twitter" class="w-6 h-6 sm:w-8 sm:h-8" />
         </a>
         <a
-          href="https://www.linkedin.com/in/joseluisgonsan/"
+          href="https://www.linkedin.com/in/dat-tien-b1139a213/"
           target="__blank"
           class="footer__social__link"
         >
@@ -29,7 +29,7 @@
           href="https://joseluisgs.github.io"
           target="__blank"
           class="font-medium text-secondary-dark dark:text-secondary-light"
-          >JoseLuisGS</a
+          >TienDat</a
         >
       </div>
     </div>

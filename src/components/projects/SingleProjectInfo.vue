@@ -17,7 +17,7 @@
           </li>
           <li class="text-ternary-dark dark:text-ternary-light">
             <span>Website: </span>
-            <a href="https://joseluisgs.github.io" target="_blank">https://joseluisgs.github.io</a>
+            <a href="https://github.com/DatTNT" target="_blank">https://github.com/DatTNT</a>
           </li>
           <li class="text-ternary-dark dark:text-ternary-light">
             <span>Teléfono: </span>
@@ -118,16 +118,16 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { Icon } from '@iconify/vue';
+import { defineComponent } from 'vue'
+import { Icon } from '@iconify/vue'
 
 export default defineComponent({
   name: 'SingleProjectInfo',
 
   components: {
-    Icon,
-  },
-});
+    Icon
+  }
+})
 </script>
 
 <style scoped>

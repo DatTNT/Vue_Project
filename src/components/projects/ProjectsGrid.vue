@@ -3,10 +3,10 @@
   <section class="pt-20 sm:pt-28">
     <div class="text-center">
       <p class="mb-3 text-2xl font-semibold sm:text-5xl text-ternary-dark dark:text-ternary-light">
-        Portfolio de proyectos
+        Project portfolio
       </p>
       <p class="text-gray-500 text-md sm:text-xl dark:text-ternary-light">
-        Algunos proyectos que he realizado
+        Some projects I have done
       </p>
     </div>
 
@@ -95,7 +95,7 @@
         class="flex items-center px-6 py-3 text-lg text-white bg-indigo-500 shadow-lg rounded-xl hover:shadow-xl hover:bg-indigo-600 sm:text-xl"
       >
         <Icon icon="feather:refresh-cw" class="w-5 mr-3" />
-        <span>Ver más</span>
+        <span>See more</span>
       </button>
     </div>
   </section>

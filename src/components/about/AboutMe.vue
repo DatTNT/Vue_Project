@@ -1,15 +1,19 @@
 <template>
   <div class="block mt-10 sm:flex sm:gap-10 sm:mt-20">
     <div class="w-full sm:w-1/4 mb-7 sm:mb-0">
-      <img src="https://avatars.githubusercontent.com/u/47913953" class="rounded-xl w-96" alt="" />
+      <img
+        src="https://avatars.githubusercontent.com/u/86225878?v=4"
+        class="rounded-xl w-96"
+        alt=""
+      />
     </div>
     <div class="w-full text-left sm:w-3/4">
       <p class="about__parrafo">
         Mi nombre es
-        <a href="https://joseluisgs.github.io/" target="_blank">Jose Luis González Sánchez</a>. Soy
-        Dr. en Informática especializado en desarrollo de software y sistemas interactivos 👨‍🎓 y
-        Profesor de Secundaria en Formación Profesional de grado superior de DAM/DAW/ASIR 💻.
-        Además, soy GitHub Campus Advisor y embajador de GitKraken.
+        <a href="https://github.com/DatTNT" target="_blank">Tran Nguyen Tien Dat</a>. I am a PhD in
+        Computer Science specialized in software development and interactive systems 👨‍🎓 and High
+        School Teacher in Higher Education in DAM/DAW/ASIR 💻. Also, I am a GitHub Campus Advisor
+        and an ambassador for GitKraken.
       </p>
       <p class="about__parrafo">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores
@@ -54,8 +58,8 @@ export default defineComponent({
 </script>
 <style scoped>
 a {
-  @apply text-indigo-700
-           dark:text-indigo-400
+  @apply text-gray-100
+           /* dark:text-indigo-400 */
            font-medium
            hover:text-indigo-400
            dark:hover:text-indigo-200;

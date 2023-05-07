@@ -46,7 +46,7 @@ export default defineComponent({
 
 <style scoped>
 #app {
-  background-color: rgb(107, 138, 224);
+  background-color: rgb(90, 130, 240);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
   /* opacity: 0.2; */
 }

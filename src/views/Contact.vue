@@ -6,11 +6,11 @@
           class="max-w-xl p-6 m-4 text-left shadow-xl sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl"
         >
           <p class="mb-8 text-2xl font-semibold text-primary-dark dark:text-primary-light">
-            Contacto
+            Contact
           </p>
           <div class="">
             <label class="block mb-2 text-lg text-primary-dark dark:text-primary-light" for="name"
-              >Nombre</label
+              >Name</label
             >
             <input
               class="contact__input"
@@ -18,7 +18,7 @@
               name="name"
               type="text"
               required
-              placeholder="Nombre Apellidos"
+              placeholder="Name surname"
               aria-label="Name"
             />
           </div>
@@ -32,7 +32,8 @@
               name="email"
               type="text"
               required
-              placeholder="Tu Email"
+              placeholder="
+You Email"
               aria-label="Email"
             />
           </div>
@@ -40,7 +41,7 @@
             <label
               class="block mb-2 text-lg text-primary-dark dark:text-primary-light"
               for="subject"
-              >Asunto</label
+              >Affair</label
             >
             <input
               class="contact__input"
@@ -48,7 +49,7 @@
               name="subject"
               type="text"
               required
-              placeholder="Asunto"
+              placeholder="Affair"
               aria-label="Subject"
             />
           </div>
@@ -57,7 +58,7 @@
             <label
               class="block mb-2 text-lg text-primary-dark dark:text-primary-light"
               for="message"
-              >Mensaje</label
+              >Message</label
             >
             <textarea
               class="contact__input"
@@ -73,7 +74,7 @@
               class="px-4 py-2.5 text-white font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 rounded-lg"
               type="submit"
             >
-              Enviar
+              To send
             </button>
           </div>
         </form>
@@ -82,12 +83,12 @@
     <div class="w-full sm:w-1/2">
       <div class="max-w-xl px-6 text-left">
         <h2 class="mt-12 mb-8 text-2xl font-semibold text-primary-dark dark:text-primary-light">
-          Detalles de contacto
+          Contact details
         </h2>
         <ul class="">
           <li class="flex">
             <Icon icon="feather:map-pin" width="24" height="24" class="contact__icon" />
-            <p class="contact__text">En algún lugar del mundo, España</p>
+            <p class="contact__text">Somewhere in the world, VietNam</p>
           </li>
           <li class="flex">
             <Icon icon="feather:mail" width="24" height="24" class="contact__icon" />

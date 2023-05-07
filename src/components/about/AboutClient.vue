@@ -3,7 +3,7 @@
     <p
       class="font-sans text-2xl font-semibold text-center sm:text-4xl text-primary-dark dark:text-primary-light"
     >
-      Algunas compañías con las que he trabajado
+      Some companies I have worked with
     </p>
     <div class="grid grid-cols-2 gap-2 mt-10 sm:grid-cols-4 sm:mt-20">
       <div>

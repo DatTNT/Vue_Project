@@ -9,7 +9,7 @@
             class="flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark"
           >
             <h5 class="text-2xl text-primary-dark dark:text-primary-light">
-              ¿Qué tipo de proyecto buscas?
+              What type of project are you looking for?
             </h5>
             <button
               class="px-4 font-bold text-primary-dark dark:text-primary-light"
@@ -50,11 +50,11 @@
                   required
                   aria-label="Subject"
                 >
-                  <option selected disabled>Tipo de proyecto</option>
+                  <option selected disabled>Project Type</option>
                   <option value="web">Aplicacion Web</option>
-                  <option value="mobile">Aplicación Móvil</option>
-                  <option value="teaching">Formación</option>
-                  <option value="evaluation">evaluación de producto</option>
+                  <option value="mobile">Mobile app</option>
+                  <option value="teaching">Training</option>
+                  <option value="evaluation">Product evaluation</option>
                 </select>
               </div>
               <div class="mt-6">
@@ -64,25 +64,16 @@
                   name="message"
                   cols="14"
                   rows="6"
-                  placeholder="Descripción del proyecto"
+                  placeholder="Project description"
                 ></textarea>
               </div>
 
               <div class="mt-6">
                 <button
-                  class="
-                    px-6
-                    py-2.5
-                    text-white
-                    font-medium
-                    tracking-wider
-                    bg-indigo-500
-                    hover:bg-indigo-600
-                    rounded-lg
-                  "
+                  class="px-6 py-2.5 text-white font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 rounded-lg"
                   type="submit"
                 >
-                  Enviar
+                  To send
                 </button>
               </div>
             </form>
@@ -92,7 +83,7 @@
               class="px-6 py-2 font-bold bg-blue-500 rounded-lg text-primary-light"
               @click="closeModal()"
             >
-              Cerrar
+              Close
             </button>
           </div>
         </div>
@@ -102,7 +93,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'ModalHelp',
@@ -110,19 +101,19 @@ export default defineComponent({
   props: {
     visible: {
       type: Boolean,
-      default: false,
-    },
+      default: false
+    }
   },
 
   setup(props, { emit }) {
     const closeModal = () => {
-      emit('close-modal');
-    };
+      emit('close-modal')
+    }
     return {
-      closeModal,
-    };
-  },
-});
+      closeModal
+    }
+  }
+})
 </script>
 
 <style scoped>

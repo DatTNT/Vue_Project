@@ -65,7 +65,7 @@
             class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-lg px-5 py-2.5"
             @click="showModal()"
           >
-            ¿Te ayudo?
+            Do I help you?
           </button>
         </div>
         <!-- Boton de cambio de tema -->
@@ -147,8 +147,8 @@ export default defineComponent({
 
 <style scoped>
 #nav a.router-link-exact-active {
-  @apply text-indigo-700
-         dark:text-indigo-400
+  @apply text-stone-950
+         /* dark:text-indigo-400 */
          font-medium;
 }
 
@@ -158,9 +158,9 @@ export default defineComponent({
           text-lg
           font-medium
           text-left
-          text-primary-dark
+          text-gray-100
           /* dark:text-ternary-light */
-          hover:text-indigo-700
+          hover:text-indigo-950
           /* dark:hover:text-secondary-light */
           md:mx-2
           sm:py-2;
