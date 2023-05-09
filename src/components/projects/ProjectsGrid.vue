@@ -11,84 +11,17 @@
     </div>
 
     <div class="grid grid-cols-1 mt-16 sm:grid-cols-3 sm:gap-10">
-      <router-link :to="{ name: 'SingleProject' }" class="project__link">
-        <div>
-          <img
-            src="../../assets/images/projects/web-project-2.jpg"
-            alt=""
-            class="border-none rounded-t-3xl"
-          />
-        </div>
-        <div class="px-4 py-6 text-center">
-          <p class="project__title">Google Health Platform</p>
-          <span class="project__description">Web Application</span>
-        </div>
-      </router-link>
-      <router-link :to="{ name: 'SingleProject' }" class="project__link">
-        <div>
-          <img
-            src="../../assets/images/projects/mobile-project-2.jpg"
-            alt=""
-            class="border-none rounded-t-3xl"
-          />
-        </div>
-        <div class="px-4 py-6 text-center">
-          <p class="project__title">Pheonix Digital Agenncy</p>
-          <span class="project__description">Mobile Application</span>
-        </div>
-      </router-link>
-      <router-link :to="{ name: 'SingleProject' }" class="project__link">
-        <div>
-          <img
-            src="../../assets/images/projects/ui-project-1.jpg"
-            alt=""
-            class="border-none rounded-t-3xl"
-          />
-        </div>
-        <div class="px-4 py-6 text-center">
-          <p class="project__title">Project Management UI</p>
-          <span class="project__description">UI / Frontend</span>
-        </div>
-      </router-link>
-      <router-link :to="{ name: 'SingleProject' }" class="project__link">
-        <div>
-          <img
-            src="../../assets/images/projects/ui-project-2.jpg"
-            alt=""
-            class="border-none rounded-t-3xl"
-          />
-        </div>
-        <div class="px-4 py-6 text-center">
-          <p class="project__title">Cloud Storage Platform</p>
-          <span class="project__description">UI / Frontend</span>
-        </div>
-      </router-link>
-      <router-link :to="{ name: 'SingleProject' }" class="project__link">
-        <div>
-          <img
-            src="../../assets/images/projects/mobile-project-1.jpg"
-            alt=""
-            class="border-none rounded-t-3xl"
-          />
-        </div>
-        <div class="px-4 py-6 text-center">
-          <p class="project__title">Education Social App</p>
-          <span class="project__description">Mobile Application</span>
-        </div>
-      </router-link>
-      <router-link :to="{ name: 'SingleProject' }" class="project__link">
-        <div>
-          <img
-            src="../../assets/images/projects/web-project-1.jpg"
-            alt=""
-            class="border-none rounded-t-3xl"
-          />
-        </div>
-        <div class="px-4 py-6 text-center">
-          <p class="project__title">Apple Design System</p>
-          <span class="text-lg text-ternary-dark dark:text-ternary-light">Web Application</span>
-        </div>
-      </router-link>
+      <div v-for="projects in projectGrid" :key="projects.id">
+        <router-link :to="{ name: 'SingleProject' }" class="project__link">
+          <div>
+            <img :src="projects.img" alt="" class="border-none rounded-t-3xl" />
+          </div>
+          <div class="px-4 py-6 text-center">
+            <p class="project__title">{{ projects.title }}</p>
+            <span class="project__description">{{ projects.description }}</span>
+          </div>
+        </router-link>
+      </div>
     </div>
     <div class="flex justify-center mt-10 sm:mt-20">
       <button
@@ -106,8 +39,23 @@
 import { defineComponent } from 'vue'
 import { Icon } from '@iconify/vue'
 
+import data from '../../data/projects/ProjectsGrid.json'
+
+interface projectGrid {
+  id: number
+  img: string
+  title: string
+  description: string
+}
+
 export default defineComponent({
   name: 'ProjectsGrid',
+
+  data() {
+    return {
+      projectGrid: data.projectGrid as projectGrid[]
+    }
+  },
 
   components: {
     Icon

@@ -1,0 +1,40 @@
+{
+  "projectGrid": [
+    {
+      "id": 1,
+      "img": "/web-project-2.jpg",
+      "title": "Google Health Platform",
+      "description": "Web Application"
+    },
+    {
+      "id": 2,
+      "img": "/mobile-project-2.jpg",
+      "title": "Pheonix Digital Agenncy",
+      "description": "Mobile Application"
+    },
+    {
+      "id": 3,
+      "img": "/ui-project-1.jpg",
+      "title": "Project Management UI",
+      "description": "UI / Frontend"
+    },
+    {
+      "id": 4,
+      "img": "/ui-project-2.jpg",
+      "title": "Cloud Storage Platform",
+      "description": "UI / Frontend"
+    },
+    {
+      "id": 5,
+      "img": "/mobile-project-1.jpg",
+      "title": "Education Social App",
+      "description": "Mobile Application"
+    },
+    {
+      "id": 6,
+      "img": "/web-project-1.jpg",
+      "title": "Apple Design System",
+      "description": "Web Application"
+    }
+  ]
+}

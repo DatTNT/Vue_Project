@@ -1,0 +1,44 @@
+{
+  "client": [
+    {
+      "id": 1,
+      "img": "/amazon_color.png",
+      "name": "Amazon"
+    },
+    {
+      "id": 2,
+      "img": " /sony_color.png",
+      "name": "SONY"
+    },
+    {
+      "id": 3,
+      "img": "/adidas_color.png",
+      "name": "Adidas"
+    },
+    {
+      "id": 4,
+      "img": " /fila_color.png",
+      "name": "FILA"
+    },
+    {
+      "id": 5,
+      "img": " /nb_color.png",
+      "name": "NB"
+    },
+    {
+      "id": 6,
+      "img": " /samsung_color.png",
+      "name": "Samsung"
+    },
+    {
+      "id": 7,
+      "img": " /canon_color.png",
+      "name": "Canon"
+    },
+    {
+      "id": 8,
+      "img": " /puma_color.png",
+      "name": "Puma"
+    }
+  ]
+}

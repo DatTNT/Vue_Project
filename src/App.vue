@@ -3,13 +3,6 @@
     <!-- Header -->
     <Header></Header>
 
-    <!-- Añadimos una transicion
-     https://vuejs.org/v2/guide/transitions.html -->
-    <!-- <router-view>
-      <transition name="fade" mode="out-in">
-        <component :is="Component" />
-      </transition>
-    </router-view> -->
     <suspense>
       <router-view />
     </suspense>

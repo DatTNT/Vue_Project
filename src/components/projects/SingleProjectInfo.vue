@@ -48,37 +48,13 @@
           Comparte
         </p>
         <div class="flex items-center gap-3 mt-5">
-          <a
-            href="https://twitter.com/joseluisgonsan"
-            target="__blank"
+          <div
+            v-for="single in singleProject"
+            :key="single.id"
             class="single-project-info__social-links"
-            ><Icon icon="feather:twitter" class="w-5 h-5"
-          /></a>
-          <a
-            href="https://instagram.com/joseluisgonsan"
-            target="__blank"
-            class="single-project-info__social-links"
-            ><Icon icon="feather:instagram" class="w-5 h-5"
-          /></a>
-          <a
-            href="https://facebook.com/joseluisgonsan"
-            target="__blank"
-            class="single-project-info__social-links"
-            ><Icon icon="feather:facebook" class="w-5 h-5"
-          /></a>
-
-          <a
-            href="https://www.linkedin.com/in/joseluisgonsan/"
-            target="__blank"
-            class="single-project-info__social-links"
-            ><Icon icon="feather:linkedin" class="w-5 h-5"
-          /></a>
-          <a
-            href="https://www.youtube.com/c/joseluisgonsan"
-            target="__blank"
-            class="single-project-info__social-links"
-            ><Icon icon="feather:youtube" class="w-5 h-5"
-          /></a>
+          >
+            <a :href="single.link" target="__blank"><Icon :icon="single.icon" class="w-5 h-5" /></a>
+          </div>
         </div>
       </div>
     </div>
@@ -120,9 +96,21 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { Icon } from '@iconify/vue'
+import data from '@/data/projects/SingleProjectData.json'
+
+interface singlePro {
+  id: number
+  link: string
+  icon: string
+}
 
 export default defineComponent({
   name: 'SingleProjectInfo',
+  data() {
+    return {
+      singleProject: data.single as singlePro[]
+    }
+  },
 
   components: {
     Icon
@@ -132,6 +120,6 @@ export default defineComponent({
 
 <style scoped>
 .single-project-info__social-links {
-  @apply p-2 text-gray-400 rounded-lg shadow-sm bg-ternary-light dark:bg-ternary-dark hover:text-primary-dark dark:hover:text-primary-light;
+  @apply h-9 p-2 text-gray-400 rounded-lg shadow-sm bg-ternary-light dark:bg-ternary-dark hover:text-primary-dark dark:hover:text-primary-light;
 }
 </style>

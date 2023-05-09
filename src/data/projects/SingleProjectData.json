@@ -1,0 +1,29 @@
+{
+  "single": [
+    {
+      "id": 1,
+      "link": "https://twitter.com/joseluisgonsan",
+      "icon": "feather:twitter"
+    },
+    {
+      "id": 2,
+      "link": "https://instagram.com/joseluisgonsan",
+      "icon": "feather:instagram"
+    },
+    {
+      "id": 3,
+      "link": "https://facebook.com/joseluisgonsan",
+      "icon": "feather:facebook"
+    },
+    {
+      "id": 4,
+      "link": "https://www.linkedin.com/in/joseluisgonsan/",
+      "icon": "feather:linkedin"
+    },
+    {
+      "id": 5,
+      "link": "https://www.youtube.com/c/joseluisgonsan",
+      "icon": "feather:youtube"
+    }
+  ]
+}

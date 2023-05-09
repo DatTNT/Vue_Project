@@ -6,41 +6,8 @@
       Some companies I have worked with
     </p>
     <div class="grid grid-cols-2 gap-2 mt-10 sm:grid-cols-4 sm:mt-20">
-      <div>
-        <img
-          src="../../assets/images/brands/amazon_color.png"
-          alt="Amazon"
-          class="clients__image"
-        />
-      </div>
-      <div>
-        <img src="../../assets/images/brands/sony_color.png" alt="SONY" class="clients__image" />
-      </div>
-      <div>
-        <img
-          src="../../assets/images/brands/adidas_color.png"
-          alt="Adidas"
-          class="clients__image"
-        />
-      </div>
-      <div>
-        <img src="../../assets/images/brands/fila_color.png" alt="FILA" class="clients__image" />
-      </div>
-      <div>
-        <img src="../../assets/images/brands/nb_color.png" alt="NB" class="clients__image" />
-      </div>
-      <div>
-        <img
-          src="../../assets/images/brands/samsung_color.png"
-          alt="Samsung"
-          class="clients__image"
-        />
-      </div>
-      <div>
-        <img src="../../assets/images/brands/canon_color.png" alt="Canon" class="clients__image" />
-      </div>
-      <div>
-        <img src="../../assets/images/brands/puma_color.png" alt="Puma" class="clients__image" />
+      <div v-for="client in clients" :key="client.id">
+        <img :src="client.img" :alt="client.name" class="clients__image" />
       </div>
     </div>
   </div>
@@ -48,9 +15,21 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import data from '@/data/about/AboutClientData.json'
+
+interface Client {
+  id: number
+  img: string
+  name: string
+}
 
 export default defineComponent({
-  name: 'AboutClients'
+  name: 'AboutClients',
+  data() {
+    return {
+      clients: data.client as Client[]
+    }
+  }
 })
 </script>
 
