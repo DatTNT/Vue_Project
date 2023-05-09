@@ -15,7 +15,7 @@
               class="w-14"
               alt="logo"
             />
-            <img v-else src="../../assets/images/logo.png" class="w-14" alt="logo" />
+            <img v-else src="../../assets/images/pexels-photo-88234.png" class="w-14" alt="logo" />
             <span class="nav__item__logo__text">TienDatPhong</span>
           </router-link>
         </div>

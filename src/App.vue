@@ -1,13 +1,27 @@
 <template>
-  <div id="app">
-    <!-- Header -->
-    <Header></Header>
+  <div id="app" class="relative">
+    <video
+      poster="poster.jpg"
+      class="w-full h-full object-cover absolute"
+      autoplay
+      muted
+      loop
+      id="myVideo"
+    >
+      <source src="../public/huy-ngu.mp4" type="video/mp4" />
+    </video>
+    <div class="relative">
+      <Header></Header>
 
-    <suspense>
-      <router-view />
-    </suspense>
-    <!-- Footer -->
-    <Footer></Footer>
+      <suspense>
+        <router-view />
+      </suspense>
+      <!-- Footer -->
+      <Footer></Footer>
+    </div>
+    <!-- </div> -->
+
+    <!-- Header -->
   </div>
 </template>
 
@@ -39,8 +53,6 @@ export default defineComponent({
 
 <style scoped>
 #app {
-  background-color: rgb(90, 130, 240);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
   /* opacity: 0.2; */
 }
 /* Programamos las transiciones

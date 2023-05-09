@@ -37,7 +37,7 @@ export default defineComponent({
     return {
       counters: data.counters as Counter[],
       counts: [
-        { count: 0, limit: 50, speed: 100 },
+        { count: 0, limit: 40, speed: 100 },
         { count: 0, limit: 100, speed: 100 },
         { count: 0, limit: 150, speed: 100 },
         { count: 0, limit: 200, speed: 100 }
